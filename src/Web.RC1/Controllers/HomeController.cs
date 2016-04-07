@@ -9,7 +9,7 @@ namespace Web.RC1.Controllers
     public class HomeController : Controller
     {
         public IActionResult Index() {
-            return View();
+            return Content("Hello World from Controller");
         }
     }
 }
