@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>3e8918b5-b1c2-4750-a154-9017ed6e1cd9</ProjectGuid>
-    <RootNamespace>ASPNetCore.Learning.CrossWebApp</RootNamespace>
+    <ProjectGuid>2497c80b-705b-440a-96ba-041815c98a38</ProjectGuid>
+    <RootNamespace>Web.RC1</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
