@@ -1,3 +1,10 @@
+@model IEnumerable<ProductViewModel>
 @{}
-
-<h1>Hello World from ViewPage!!!!</h1>
+<h3>Listagem de produtos</h3>
+<div class="jumbotron">
+    <ul>
+        @foreach (var product in Model) {
+            <li>@product.Name</li>
+        }
+    </ul>
+</div>
