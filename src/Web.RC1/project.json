@@ -5,12 +5,11 @@
     "emitEntryPoint": true,
     "preserveCompilationContext": true
   },
-
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "type": "platform",
       "version": "1.0.0-rc2-23931"
     },
+    "Microsoft.AspNetCore.Hosting": "1.0.0-*",
     "Microsoft.AspNetCore.Mvc": "1.0.0-*",
     "Microsoft.AspNetCore.Mvc.Dnx": "1.0.0-*",
     "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-*",
@@ -18,6 +17,7 @@
     "Microsoft.AspNetCore.Razor.Runtime": "1.0.0-*",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
     "Microsoft.AspNetCore.Server.WebListener": "0.1.0-*",
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
     "Microsoft.NETCore.Platforms": "1.0.1-*"
   },
   "tools": {
@@ -40,11 +40,11 @@
   },
 
   "content": [
-    "Areas",
     "Views",
     "wwwroot",
     "config.json"
   ],
+
   "exclude": [
     "wwwroot",
     "node_modules"
@@ -52,5 +52,8 @@
   "publishExclude": [
     "**.user",
     "**.vspscc"
-  ]
+  ],
+  "scripts": {
+    "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ]
+  }
 }
